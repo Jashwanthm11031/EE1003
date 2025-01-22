@@ -108,10 +108,15 @@ In this method, we approximate derivative as
 
 Substitute equation$(14)$ in equation$(13)$
 \begin{align}
-	\frac{y_{n+1} - y_n}{h} =  \frac{x+y}{x}\\
-	y_{n+1}-y_n = h  (\frac{x+y}{x})\\
-	y_{n+1} = y_n + h(\frac{x+y}{x})
+	\frac{y_{n+1} - y_n}{h} =  \frac{x_{n}+y_{n}}{x_{n}}\\
+	y_{n+1}-y_n = h  (\frac{x_{n}+y_{n}}{x_{n}})\\
+	y_{n+1} = y_n + h(\frac{x_{n}+y_{n}}{x_{n}})
 \end{align}
+
+\begin{figure}[h!]
+   \centering
+   \includegraphics[width=\columnwidth]{figs/fig.pdf}
+\end{figure}
 
 I'm taking the initial conditions as $x=1$, $y=0$ and $h=0.006$. We compute the values of $x_n$ and $y_n$ using above recurrence relation. These values can be used to approximate the solution numerically for a given range of $x$.
 
